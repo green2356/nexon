@@ -568,13 +568,6 @@ header nav > ul > li:hover .sub {
     margin-top: 10vh;
 }
 
-/* #s2 > p {
-    text-align: center;
-    color: #c1170c;
-    font-weight: bold;
-    font-size: 1.5vw;
-} */
-
 .box_wrap {
     display: flex;
     justify-content: space-between;
@@ -1619,26 +1612,21 @@ footer .copy p {
     }
 
     .top {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        background-color: #f68500;
+        opacity: 0.7;
+        border-radius: 100%;
+        color: #fff;
         font-size: 3vw;
         position: fixed;
         right: 10px;
         bottom: 10px;
         display: none;
-        z-index: 9999;
+        z-index: 100;
+        
     }
-    
-    .top a {
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-        text-align: center;
-        background-color: #222;
-        border-radius: 100%;
-        color: #fff;
-    }
-    
-
-
-
 
 }

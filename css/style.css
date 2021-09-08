@@ -1,0 +1,505 @@
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Thin';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@keyframes slide-top {
+    0% {
+        transform: translateY(20vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+* { margin: 0; padding: 0;}
+li { list-style: none; }
+a { display: block; text-decoration: none; color: #3b200f; }
+h1 { color: #3b200f;}
+p { color: #3b200f; }
+img { width: 100%;}
+body { font-family: 'GmarketSansMedium'; }
+::-webkit-scrollbar { display: none; }
+html, body { width: 100%;  }
+div { box-sizing: border-box; }
+
+
+/* main */
+.main, .header .sub1, .sub2, .sub3 { width: 100%; }
+.header { width: 100%; position: fixed; top:0; left: 0; z-index: 100; background-color: #fff;}
+
+.header .header1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw;
+    align-items: center;
+}
+
+.header .header1 .logo {
+    width: 40vw;
+    margin: 0 auto;
+    margin-left: 25vw;
+}
+
+.header .header1 .menu_btn {
+    width: 10vw;
+}
+
+.header .header2 ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .header2 ul li {
+    width: 25vw;
+    background-color: #fbe473;
+}
+
+.header .header2 ul li a.active {
+    background-color: #fad000;
+}
+
+.header .header2 ul li a {
+    color: #3b200f;
+    text-align: center;
+    line-height: 40px;
+    font-size: 4.2vw;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    right: -100vw;
+    width: 100%;
+    padding: 5vw;
+    z-index: 100;
+    background-color: #fad000;
+}
+
+.nav .close {
+    width: 10vw;
+    float: right;
+}
+
+.nav .close a {
+    width: 10vw;
+}
+
+.nav .nav_logo {
+    width: 55vw;
+    clear: both;
+    margin: 10vw auto;
+}
+
+.nav nav {
+    width: 100%;
+}
+
+.nav nav > ul > li {
+    border-bottom: 1px solid rgba(59,32,15,0.5);
+}
+
+.nav nav ul li a {
+    width: 100%;
+    font-size: 7vw;
+    text-align: center;
+    padding: 3vw;
+    color: #3b200f;
+}
+
+.nav nav .sub {
+    display: none;
+}
+
+.nav nav .sub li a {
+    font-size: 4vw;
+    color: #3b200f;
+    padding: 3vw;
+}
+
+.nav .sns_icon {
+    margin-top: 25vw;
+    width: 40vw;
+}
+
+.nav .sns_icon ul {
+    display: flex;
+}
+
+.nav .sns_icon ul li {
+    margin-right: 5vw;
+}
+
+/* .section {
+    text-align: center;
+    margin-top: 25vw;
+} */
+
+.visual {
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    margin: 10vw 0;
+}
+
+.tab {
+    width: 100%;
+}
+
+.tab .tab_title {
+    display: flex;
+}
+
+.tab .tab_title a {
+    width: 50vw;
+    height: 40px;
+    text-align: center;
+    font-size: 4.5vw;
+    line-height: 40px;
+    background-color: #fbe473;
+}
+
+.tab .tab_title a.active {
+    background-color: #fad000;
+}
+
+.tab .tab_content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.tab .tab_content div {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tab .tab_content div .tab1_btn {
+    width: 100vw;
+    margin-top: 60vw;
+    margin-left: 35vw;
+}
+
+.tab .tab_content .con1 p {
+    position: absolute;
+    margin-bottom: 50vw;
+}
+
+.tab .tab_content .box {
+    bottom: 0;
+}
+
+.tab .tab_content .con1 .tab1_btn p {
+    margin-left: -25vw;
+    margin-top: 1vw;
+}
+
+.tab .tab_content .con1 .tab1_btn a {
+    width: 14vw;
+    font-size: 4vw;
+    height: 37px;
+    line-height: 40px;
+    background-color: #3b200f;
+    color: #fad000;
+    text-align: center;
+    margin-left: 41vw;
+    margin-top: -1.5vw
+}
+
+.tab .tab_content .con1 .tab1_btn input {
+    width: 35vw;
+}
+
+.tab .tab_content .con2 .tab2_btn a {
+    width: 25vw;
+    height: 40px;
+    font-size: 4vw;
+    line-height: 43px;
+    background-color: #3b200f;
+    color: #fad000;
+    text-align: center;
+    margin-left: 39vw;
+    margin-top: 64vw
+}
+
+.event {
+    margin-top: 100vw;
+    padding: 0vw 5vw;
+}
+
+.event img:nth-child(2) {
+    margin: 5vw 0;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    height: 53vw;
+    background-color: #fad000;
+    padding: 5vw 0;
+    text-align: center;
+    color: #333;
+    line-height: 8vw;
+    font-size: 3.2vw;
+}
+
+.footer .f_logo {
+    width: 45vw;
+    margin: 0 auto;
+}
+
+.footer .info ul {
+    display: flex;
+}
+
+.footer .info ul li {
+    width: 33.33333333%;
+}
+
+.footer address {
+    font-style: normal;
+
+}
+
+.footer p {
+    background-color: #fbe473;
+    clear: both;
+    font-size: 1vw;
+    font-family: 'Pretendard-Thin';
+    font-weight: bold;
+    margin-top: 2vw;
+}
+
+/* 맨 하단 고정 메뉴 */
+.main_icon {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 200;
+}
+
+.main_icon ul {
+    display: flex;
+}
+
+.main_icon ul li {
+    width: 100%;
+    height: 20vw;
+    background-color: #fff;
+    border-top: 1px solid #999;
+}
+
+.main_icon ul li:nth-child(2) {
+    width: 85%;
+}
+
+.main_icon ul li img {
+    width: 70%;
+}
+
+.main_icon ul li a {
+    padding: 5vw;
+}
+
+
+.sub1 .section2 {
+    text-align: center;
+    margin-top: 33vw;
+}
+
+.sub1 .section2 h1 {
+    margin-top: 10vw;
+    margin-bottom: 3vw;
+    font-weight: 900;
+    font-family: 'GmarketSansBold';
+}
+
+.sub1 .section2 > p {
+    width: 15vw;
+    height: 5.5vw;
+    line-height: 6.5vw;
+    border-radius: 100vw;
+    font-size: 4vw;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #fad000;
+    margin-bottom: 5vw;
+    font-family: 'GmarketSansBold';
+}
+
+.sub1 .section2 > .t_hot {
+    width: 16vw;
+}
+
+.sub1 .section2 > .t_cold {
+    width: 36vw;
+}
+
+.sub1 .section2 > .t_dessert {
+    width: 29vw;
+}
+
+.sub1 .section2 .Swiper_sub_menu {
+    margin-bottom: 15vw;
+    color: #3b200f;
+}
+
+.sub1 .section2 .Swiper_sub_menu .swiper-slide {
+    width: 29.16666666666667%;
+    margin-right: 6.25%;
+}
+
+/* 브랜드 */
+.sub2 .section3 {
+    margin-top: 26vw;
+}
+
+.sub2 .section3 .ani {
+    padding: 0 3vw;
+    margin-top: 10vw;
+    margin-bottom: 30vw;
+    width: 100%;
+    display: flex;
+    
+}
+
+.sub2 .section3 .ani1 {
+    animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.sub2 .section3 .ani2 {
+    animation: slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 0.3s;
+}   
+
+.sub2 .section3 .ani3 {
+    animation: slide-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 0.6s;
+}
+
+.sub2 .section3 .ani1,
+.sub2 .section3 .ani2 {
+    padding-right: 2vw;
+    
+}
+
+.sub2 .section3 .brand_txt {
+    padding: 0 3vw;
+}
+
+.sub2 .section3 .brand_txt h2 {
+    font-size: 7vw;
+    color: #3b200f;
+    margin-bottom: 15vw;
+}
+
+.sub2 .section3 .brand_txt h3 {
+    font-size: 5.5vw;
+    color: #3b200f;
+    margin: 15vw 0;
+}
+
+.sub2 .section3 .brand_txt span {
+    color: #fad000;
+    font-weight: bold;
+}
+
+.sub2 .section3 .brand_txt p {
+    font-size: 4vw;
+}
+
+.sub2 .section3 .brand_txt .mind {
+    text-align: center;
+}
+
+.sub2 .section3 .brand_txt i {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.sub2 .section3 .mid_img {
+    margin: 15vw 0;
+}
+
+.sub2 .section3 .mid_img .mid_logo {
+    margin-top: 5vw;
+    padding: 0 5vw;
+}
+
+
+
+
+/* 고객센터 */
+.sub3 .section4 .qna {
+    width: 94%;
+    margin: 0 auto;
+    margin-top: 5vw;
+}
+
+.sub3 .section4 h1 {
+    color: #3b200f;
+    font-size: 8vw;
+    text-align: center;
+    margin-bottom: 4vw;
+    margin-top: 35vw;
+    font-family: 'GmarketSansBold';
+}
+
+.sub3 .section4 iframe {
+    width: 100%;
+    height: 100vw;
+}
+
+.top {
+    font-size: 2.5vw;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+    z-index: 9999;
+}
+
+.top a {
+    width: 45px;
+    height: 45px;
+    line-height: 48px;
+    text-align: center;
+    background-color: #3b200f;
+    border-radius: 100%;
+    color: #fad000;
+}
+
+
+
+
